@@ -5,7 +5,7 @@ BINFOLDER =bin
 SOURCES = $(wildcard *.cu)
 EXECS = $(SOURCES:%.cu=%)
 
-all: $(EXECS)
+all: FOLDER $(EXECS)
 
 FOLDER:
 	mkdir -p $(BINFOLDER)
